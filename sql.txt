@@ -1,0 +1,25 @@
+CREATE TABLE t_rumor
+(
+	data_id int auto_increment primary key,
+	rumor_code text,
+	createdAt datetime, 
+	text_id text,
+	userId text,
+	user_location text,
+	text text,
+	reply_user_id text,
+	user_followers int,
+	user_friends int,
+	user_lang varchar(10),
+	user_geo text,
+	user_place text,
+	retweet_text_id  text,
+	re_user_id text,
+	retweet_location text,
+	sentiment int,
+	surprise int,
+	trust int,	
+	doubt int		
+);
+
+alter table t_rumor add hashtag text;
